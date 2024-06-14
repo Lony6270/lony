@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Management</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include any additional stylesheets or libraries here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include your preferred charting library, e.g., Chart.js -->
+</head>
+<body>
+    <header>
+        <h1>Minecraft Server Management Dashboard</h1>
+    </header>
+    <main>
+        <section class="file-management">
+            <h2>File Management</h2>
+            <input type="file" id="file-upload" name="file-upload">
+            <button onclick="uploadFile()">Upload File</button>
+            <button onclick="downloadFile()">Download File</button>
+            <button onclick="deleteFile()">Delete File</button>
+            <!-- Add JavaScript functions for file operations -->
+        </section>
+        <section class="ram-performance">
+            <h2>RAM Performance</h2>
+            <canvas id="ramChart"></canvas>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minecraft Server Management</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Include your JavaScript file for client-side logic -->
+</body>
+</html>
